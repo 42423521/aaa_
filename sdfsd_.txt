@@ -1,0 +1,18 @@
+# 定义要转换的Python代码（字符串）
+python_code = '''
+def hello_world():
+    print("Hello, World!")
+'''
+
+
+aaa_="dddd_"
+
+
+# 将字符串编码为字节串
+byte_array = aaa_.encode('utf-8')#python_code.encode('utf-8')
+
+# 转换为十六进制
+hex_string = byte_array.hex()
+
+# 输出结果
+print(hex_string)
